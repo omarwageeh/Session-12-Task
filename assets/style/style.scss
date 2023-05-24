@@ -1,0 +1,122 @@
+$primary-color: #17a6b6;
+$secondary-color: #f3f3f3;
+$dark-text: #696969;
+$light-text: #ffffff;
+$muted-text: #919191;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .my-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    background-color: #dddddd;
+    box-shadow: 0 0 0 50vmax rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: black;
+    z-index: 3;
+    .my-modal-tite {
+      color: $primary-color;
+    }
+  }
+  .container {
+    .header {
+      .header-wrapper {
+        .header-title {
+          font-size: 45px;
+          font-weight: 300;
+          line-height: 35px;
+          margin-bottom: 0;
+          color: $primary-color;
+        }
+        .header-text {
+          line-height: 17px;
+          margin-bottom: 0;
+          color: $muted-text;
+        }
+      }
+    }
+    .row {
+      .place {
+        background-color: $secondary-color;
+        .place-body {
+          .place-title {
+            color: $primary-color;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+            margin-bottom: 0px;
+            background-color: $secondary-color;
+          }
+          .place-subtitle {
+            margin-top: 10px;
+            color: $muted-text;
+          }
+        }
+        .place-footer {
+          color: $muted-text;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+  .page-footer {
+    background-color: #17a6b6;
+    .container {
+      .row {
+        .col-md-4 {
+          .footer-wrapper {
+            color: $light-text;
+            &.bg-map {
+              background-image: url("../img/bg_about.png");
+              background-repeat: no-repeat;
+              background-position: right bottom;
+            }
+            .footer-title {
+              font-size: 28px;
+              text-transform: uppercase;
+            }
+            .footer-body > ul {
+              padding-left: 1rem;
+            }
+            .contact-from {
+              font-size: 16px;
+              text-decoration: none;
+              color: $primary-color;
+              width: fit-content;
+              text-transform: capitalize;
+            }
+            .icons::after {
+              margin-top: 20px;
+              content: "";
+              width: 100%;
+              border-bottom: 1px solid $light-text;
+            }
+            .input-with-icon {
+              position: relative;
+            }
+            .input-with-icon > i {
+              position: absolute;
+              top: 10px;
+              left: 15px;
+            }
+            .input-with-icon > button {
+              position: absolute;
+              top: 0px;
+              right: 1px;
+              height: 37px;
+              border: 0px;
+              color: $primary-color;
+              background-color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

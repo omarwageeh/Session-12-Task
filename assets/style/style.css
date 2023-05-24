@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body .my-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background-color: #fafafa;
+  background-color: #dddddd;
+  box-shadow: 0 0 0 50vmax rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  color: black;
+  z-index: 3;
+}
+body .my-modal .my-modal-tite {
+  color: #17a6b6;
+}
+body .container .header .header-wrapper .header-title {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 35px;
+  margin-bottom: 0;
+  color: #17a6b6;
+}
+body .container .header .header-wrapper .header-text {
+  line-height: 17px;
+  margin-bottom: 0;
+  color: #919191;
+}
+body .container .row .place {
+  background-color: #f3f3f3;
+}
+body .container .row .place .place-body .place-title {
+  color: #17a6b6;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  background-color: #f3f3f3;
+}
+body .container .row .place .place-body .place-subtitle {
+  margin-top: 10px;
+  color: #919191;
+}
+body .container .row .place .place-footer {
+  color: #919191;
+  background-color: #f3f3f3;
+}
+body .page-footer {
+  background-color: #17a6b6;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper {
+  color: #ffffff;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper.bg-map {
+  background-image: url("../img/bg_about.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper .footer-title {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper .footer-body > ul {
+  padding-left: 1rem;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper .contact-from {
+  font-size: 16px;
+  text-decoration: none;
+  color: #17a6b6;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: capitalize;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper .icons::after {
+  margin-top: 20px;
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper .input-with-icon {
+  position: relative;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper .input-with-icon > i {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+body .page-footer .container .row .col-md-4 .footer-wrapper .input-with-icon > button {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  height: 37px;
+  border: 0px;
+  color: #17a6b6;
+  background-color: #f3f3f3;
+}/*# sourceMappingURL=style.css.map */
